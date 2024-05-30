@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apen tamagotchi</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <title>Apen Tamagotchi</title>
+    <!-- Start scherm -->
+    <div id="startScherm">
+        <h1>Apen tamagotchi</h1>
+        <p>Geef je aapje een naam en houd hem inleven</p>
+
+
+        <div id="invoerContainer">
+            <p id="foutmelding"></p>
+            <input type="text" placeholder="Voer naam in..." id="naamInvoer">
+            <button id= "startButton">Start</button>
+        </div>
+    </div>  
+
+    <!-- Spel scherm -->
+    <div id="spelContent">
+        <h2>Aapie beta</h2>
+        <div id="afbeeldingBars">
+            <div id="aapjeBars">
+                <h3>Honger</h3>
+                <progress value="100" max="100" id="voerBar"></progress>
+                <p id="voerScoreTekst">Aapjesbar</p>
+                <h3>Energie</h3>
+                <progress value="100" max="100" id="energieBar"></progress>
+                <p id="energieScoreTekst">Aapjesbar</p>
+            </div>
+            <div id="aapjeAfbeelding">
+                <img src="../eindopdracht/images/monkey1-default.png" alt="aapje" id="aapIMG1">
+            </div>
+            <div id="items">
+                <img src="/eindopdracht/images/banaan.png" alt="banaan" id="banaanIcoon">
+                <h3 id="banaanTekst">Banaantjes:</h3>
+            </div>
+        </div>
+
+    <div id="elementen">
+        <div id="knopjes">
+                <button id="voerBTN">Voeren</button>
+                <button id="energieBTN">Slapen</button>
+                <button id="dansBTN">Dansje</button>
+        </div>
+        <div id="banaanVerzamelContainer">
+            <p>Verzamel je banaantjes</p>
+            <img src="/eindopdracht/images/banaanboom.jpeg" id="banaanboomImg" alt="banaanboom">
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Gameover scherm -->
+    <div id="gameOver">
+        <p>Game over</p>
+        <button id ="herstartButton">Herstart</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
