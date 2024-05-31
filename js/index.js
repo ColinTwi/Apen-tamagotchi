@@ -57,7 +57,7 @@ function startSpel(){
             herstart();
             afbeeldingVeranderen();
         }
-    },250)
+    },2500)
     
     let banaanKnop = document.getElementById("banaanboomImg")
 
@@ -99,7 +99,7 @@ function startSpel(){
         herstart();
         afbeeldingVeranderen();
         }
-    },100)
+    },1000)
     
     energieKnop.addEventListener('click', function() {
         energieLvl += 10
@@ -136,14 +136,14 @@ function startSpel(){
     let dansKnop = document.getElementById("dansBTN")
 
     dansKnop.addEventListener('click', function() {
-        aapPoppetje.src = "/eindopdracht/Apen-tamagotchi/images/aapdansje1.png";
+        aapPoppetje.src = "images/aapdansje1.png";
 
         setTimeout(function() {
-            aapPoppetje.src = "/eindopdracht/Apen-tamagotchi/images/aapdansje2.png";
+            aapPoppetje.src = "images/aapdansje2.png";
         }, 200);
 
         setTimeout(function() {
-            aapPoppetje.src = "/eindopdracht/Apen-tamagotchi/images/monkey1-default.png";
+            aapPoppetje.src = "images/monkey1-default.png";
         }, 1000);
     })
 
@@ -152,10 +152,10 @@ function startSpel(){
 //afbeelding veranderen
 function afbeeldingVeranderen(){
     if(voerLvl < 1 || energieLvl < 1){
-        aapPoppetje.src = "/eindopdracht/Apen-tamagotchi/images/aapdood.png"
+        aapPoppetje.src = "images/aapdood.png"
         titel.textContent = "Dood"
     } else{
-        aapPoppetje.src = "/eindopdracht/Apen-tamagotchi/images/monkey1-default.png"
+        aapPoppetje.src = "images/monkey1-default.png"
     }
 }
 

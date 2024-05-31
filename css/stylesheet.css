@@ -121,11 +121,13 @@ button {
 
 }
 
-#elementen{
+/*#elementen{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
+*/
 
 #knopjes{
     display: flex;
@@ -159,12 +161,13 @@ button {
 
 #items{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: white;
     padding: 1em;
     border-radius: 1em;
-    margin-left: 2em;
+    margin: 2em 2em 0 auto;
+    width: 15em;
     box-shadow: 5px 5px 5px #000000ab;
 }
 
