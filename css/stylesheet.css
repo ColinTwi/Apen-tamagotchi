@@ -76,7 +76,7 @@ h4{
 
 /* Spel content opmaak */
 #spelContent{
-    background-image: url("Apen-tamagotchi/images/background.png");
+    background-image: url("/images/background.png");
     margin: 0;
     background-repeat: no-repeat;
     background-position: center;
