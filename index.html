@@ -8,61 +8,98 @@
 </head>
 <body>
     <title>Apen Tamagotchi</title>
+
     <!-- Start scherm -->
     <div id="startScherm">
-        <h1>Apen tamagotchi</h1>
-        <p>Geef je aapje een naam en houd hem inleven</p>
-
-
-        <div id="invoerContainer">
-            <p id="foutmelding"></p>
-            <input type="text" placeholder="Voer naam in..." id="naamInvoer">
-            <button id= "startButton">Start</button>
+        <div id="startInfo">
+            <h1>Apen tamagotchi</h1>
+            <p>Geef je aapje een naam en houd hem in leven.</p>
+            <div id="invoerContainer">
+                <p id="foutmelding"></p>
+                <input type="text" placeholder="Voer naam in..." id="naamInvoer">
+                <button id= "startBTN">Start</button>
+            </div>
         </div>
+        <img src="images/monkey1-default.png"alt="aapje">
     </div>  
 
     <!-- Spel scherm -->
     <div id="spelContent">
-
-        <div id="items">
-            <img src="images/banaan.png" alt="banaan" id="banaanIcoon">
-            <h3 id="banaanTekst">Banaantjes:</h3>
+        <div id="itemsBar">
+            <div id="banaanInfo">
+                <img src="images/banaan.png" alt="banaan" id="banaanIcoon">
+                <h3 id="banaanTekst">Banaantjes:</h3>
+            </div>
+            <div id = "jungleJuiceInfo">
+                <img src="images/jungleJuice.png" alt="Jungle Juice blikje" id="jungleJuiceIcoon">
+                <h3 id="drinkTekst">JungleJuice: </h3>
+            </div>
         </div>
 
-        <h2>Aapie beta</h2>
+         <!-- Aapje met progressiebars -->
+        <h2>Naam van aapje</h2>
         <div id="afbeeldingBars">
             <div id="aapjeBars">
                 <h3>Honger</h3>
                 <progress value="100" max="100" id="voerBar"></progress>
-                <p id="voerScoreTekst">Aapjesbar</p>
+                <p id="voerScoreTekst">100</p>
                 <h3>Energie</h3>
                 <progress value="100" max="100" id="energieBar"></progress>
-                <p id="energieScoreTekst">Aapjesbar</p>
+                <p id="energieScoreTekst">100</p>
+                <h3>Dorst</h3>
+                <progress value="100" max="100" id="dorstBar"></progress>
+                <p id="dorstScoreTekst">100</p>
             </div>
             <div id="aapjeAfbeelding">
                 <img src="images/monkey1-default.png"alt="aapje" id="aapIMG1">
             </div>
+
+            <!-- Bananen boom -->
             <div id="banaanVerzamelContainer">
-                <p>Verzamel je banaantjes</p>
-                <img src="images/banaanboom.jpeg" id="banaanboomImg" alt="banaanboom">
+                <p>Pluk banaantjes</p>
+                <div id="boomContainer">
+                    <img src="images/banaanboom.png" id="banaanboomImg" alt="banaanboom">
+                    <div id="banaanContainer"></div>
+                </div>
+            </div>
+
+            <!-- Vending machine -->
+            <div id="vendingContainer">
+                <p>Koop drankje</p>
+                <h5>Voor de prijs van 3 bananen</h5>
+                <div id="drankjeContainer">
+                    <img src="images/vendingmachine.png" id="vendingmachineImg" alt="vendingmachine">
+                    <button id ="vendingBTN">JungleJuice</button>
+                    
+                </div>
             </div>
         </div>
 
-
+         <!-- Knoppen -->
         <div id="knopjes">
-                <button id="voerBTN">Voeren</button>
-                <button id="energieBTN">Slapen</button>
-                <button id="dansBTN">Dansje</button>
+            <button id="voerBTN">Voeren</button>
+            <button id="drinkBTN">Drinken</button>
+            <button id="slaapBTN">Slapen</button>
+            <button id="dansBTN">Dansje</button>    
         </div>
 
 
     </div>
 
-    <!-- Gameover scherm -->
-    <div id="gameOver">
-        <p>Game over</p>
-        <button id ="herstartButton">Herstart</button>
-    </div>
+        <!-- Gameover scherm -->
+        <div id="gameOver">
+            <div id="gamOverContent">
+                <div id="infoHerstart">
+                    <h4>Game over</h4>
+                    <p>Probeer nog een keertje</p>
+                    <button id ="herstartButton">Herstart</button>
+                </div>
+                <img src="images/aapdood.png"alt="dood aapje">
+            </div>
+        </div>
+        
+    
+
     <script src="js/index.js"></script>
 </body>
 </html>
